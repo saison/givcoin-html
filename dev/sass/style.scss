@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import "compass/reset";
+@import "compass";
+
+$base: #e4e4e4;
+$main: #f587c6;
+$sub: #6db3ff;
+$attention: #f75959;
+$white: #ffffff;
+$black: #3b3b3b;
+
+$font:Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+$coinColors: #D05A6E, #EFBB24, #2EA9DF, #00896C, #ED784A;
+
+html,body{
+  font-family: $font;
+  font-size: 13px;
+  color: $black;
+}
+
+
+header{
+  width: 100%;
+  height: 40px;
+  background-color: $main;
+  position: fixed;
+  top: 0;
+  h1{
+    height: 40px;
+    line-height: 40px;
+    color: $white;
+    font-size: 18px;
+  }
+}
+#wrapper{
+  width: 96%;
+  margin: 0 auto;
+}
+
+// top style
+#topLoginArea{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  background: $main;
+}

@@ -1,0 +1,24 @@
+doctype html
+html(lang="ja")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width initial-scale=1.0")
+  link(rel="stylesheet", href="css/style.css")
+  script(src="js/script.js")
+  title GiveCoin | 小さな感謝をコインで givery社内アプリ
+body
+  header
+    h1 GivCoin
+  #wrapper
+    #topLoginArea
+      #signinBox
+        form(action="#", method="post")
+          input(type="mail", name="email", placeholder="Your E-Mail")
+          input(type="text", name="name", placeholder="Your Name")
+          input(type="text", name="nickname", placeholder="Your NickName")
+          input(type="password", name="password", placeholder="Password")
+          input(type="password", name="passwordConfirm", placeholder="Confirm Password")
+      #loginBox
+        form(action="#", method="post")
+          input(type="mail", name="email", placeholder="E-Mail")
+          input(type="password", name="password", placeholder="Password")

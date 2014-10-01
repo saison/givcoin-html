@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Sacramento);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,29 +62,196 @@ html, body {
   color: #3b3b3b;
 }
 
+#indexWrapper #topLoginArea #toBox {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+#bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+#bg img {
+  width: 100%;
+}
+
+#indexWrapper {
+  width: 100%;
+  position: relative;
+  top: 50px;
+  z-index: 3;
+}
+#indexWrapper h1#logo {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Sacramento", cursive;
+  color: #ffffff;
+}
+#indexWrapper #topLoginArea {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#indexWrapper #topLoginArea #toBox #toSignup {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: solid 1px #ffffff;
+  text-align: center;
+  color: #ffffff;
+  float: left;
+}
+#indexWrapper #topLoginArea #toBox #toLogin {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: solid 1px #ffffff;
+  text-align: center;
+  color: #ffffff;
+  float: right;
+}
+#indexWrapper #topLoginArea #toBox .active {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+#indexWrapper #topLoginArea #signupBox {
+  margin-top: 20px;
+}
+#indexWrapper #topLoginArea #signupBox input[type="mail"],
+#indexWrapper #topLoginArea #signupBox input[type="text"],
+#indexWrapper #topLoginArea #signupBox input[type="password"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.7);
+  background: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #ffffff;
+}
+#indexWrapper #topLoginArea #signupBox input[type="submit"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 40px;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #ffffff;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+#indexWrapper #topLoginArea #signupBox input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+#indexWrapper #topLoginArea #loginBox {
+  margin-top: 20px;
+}
+#indexWrapper #topLoginArea #loginBox input[type="mail"],
+#indexWrapper #topLoginArea #loginBox input[type="text"],
+#indexWrapper #topLoginArea #loginBox input[type="password"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.7);
+  background: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #ffffff;
+}
+#indexWrapper #topLoginArea #loginBox input[type="submit"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 40px;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #ffffff;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+#indexWrapper #topLoginArea #loginBox input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+#indexFooter {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 80px;
+  color: #ffffff;
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
 header {
   width: 100%;
   height: 40px;
   background-color: #f587c6;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 header h1 {
   height: 40px;
   line-height: 40px;
   color: #ffffff;
   font-size: 18px;
+  font-family: "Sacramento", cursive;
 }
 
 #wrapper {
   width: 96%;
   margin: 0 auto;
-}
-
-#topLoginArea {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 100px;
-  text-align: center;
-  background: #f587c6;
 }

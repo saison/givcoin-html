@@ -2,32 +2,41 @@
 <html lang="ja"></html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
   <title>GiveCoin | 小さな感謝をコインで givery社内アプリ</title>
 </head>
 <body>
-  <header>
-    <h1>GivCoin</h1>
-  </header>
-  <div id="wrapper">
+  <div id="bg"><img src="img/bgimg.png" alt="topImg"></div>
+  <div id="indexWrapper">
+    <h1 id="logo">GivCoin</h1>
     <div id="topLoginArea">
-      <div id="signinBox">
+      <div id="toBox">
+        <div id="toSignup" class="active">Signup</div>
+        <div id="toLogin">login</div>
+      </div>
+      <div id="signupBox">
         <form action="#" method="post">
           <input type="mail" name="email" placeholder="Your E-Mail">
           <input type="text" name="name" placeholder="Your Name">
           <input type="text" name="nickname" placeholder="Your NickName">
           <input type="password" name="password" placeholder="Password">
           <input type="password" name="passwordConfirm" placeholder="Confirm Password">
+          <input type="submit" name="signup" value="Start GivCoin">
         </form>
       </div>
       <div id="loginBox">
         <form action="#" method="post">
           <input type="mail" name="email" placeholder="E-Mail">
           <input type="password" name="password" placeholder="Password">
+          <input type="submit" name="login" value="Start GivCoin">
         </form>
       </div>
     </div>
   </div>
+  <footer id="indexFooter">
+    <Copyright>&copy; 2014 GivCoin All Rights Reserved.</Copyright>
+  </footer>
 </body>

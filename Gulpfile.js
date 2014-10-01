@@ -17,7 +17,6 @@ var p = {
   },
   scripts: {
     coffee: 'dev/js/script.coffee',
-    js: 'dev/js/script.js',
     dest: 'build/js/'
   },
   jade: {
@@ -53,7 +52,6 @@ gulp.task('compass', function() {
 
 // Coffee
 gulp.task('browserify', function() {
-
     gulp.src(p.scripts.coffee, {read: false})
     .pipe(plumber())
     .pipe(browserify({
@@ -79,7 +77,7 @@ gulp.task('jade', function() {
 gulp.task('watch', function() {
   gulp.watch('dev/sass/**/*.scss', ['compass']);
   gulp.watch('dev/**/*.jade', ['jade']);
-  gulp.watch('dev/js/**/*.js', ['browserify']);
+  gulp.watch('dev/js/**/*.coffee', ['browserify']);
 })
 
 // Go

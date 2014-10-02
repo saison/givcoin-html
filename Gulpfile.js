@@ -80,6 +80,10 @@ gulp.task('watch', function() {
   gulp.watch('dev/js/**/*.coffee', ['browserify']);
 })
 
+gulp.task('compile', ['jade', 'compass', 'browserify'], function() {
+  console.log('gulp compile!')
+})
+
 // Go
 gulp.task('default', ['connect','jade', 'compass', 'browserify', 'watch'], function() {
   console.log('Starting gulp!')

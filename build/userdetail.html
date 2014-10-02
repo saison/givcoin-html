@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/footerFixed.js"></script>
   <script src="js/script.js"></script>
   <title>GiveCoin | 小さな感謝をコインで givery社内アプリ</title>
 </head>
@@ -30,9 +31,13 @@
     </section>
     <h3 id="GivCoin">{username}さんにGivCoinしますか？</h3>
     <div id="isGivCoin">
-      <div id="give" style="background-color: #EFBB24;">Give</div>
+      <div id="give">
+        <form action="#">
+          <input type="submit" name="givcoin" value="Give" style="background-color: #EFBB24;">
+        </form>
+      </div>
       <div id="not">No.</div>
     </div>
   </div>
 </body>
-<footer style="background-color: #EFBB24;">Copyright &copy; 2014 GivCoin All Rights Reserved.</footer>
+<footer id="footer" style="background-color: #EFBB24;">Copyright &copy; 2014 GivCoin All Rights Reserved.</footer>

@@ -476,9 +476,15 @@ h3#GivCoin{
     height: 150px;
     line-height: 150px;
     margin: 0 auto;
-    font-size: 30px;
-    font-family: $logo;
-    @include border-radius(50%);
+    form input[type="submit"]{
+      @include appearance(none);
+      width: 150px;
+      height: 150px;
+      font-size: 30px;
+      font-family: $logo;
+      border: none;
+      @include border-radius(50%);
+    }
   }
   #not{
     width: 50% !important;
@@ -486,6 +492,7 @@ h3#GivCoin{
     line-height: 30px;
     margin: 0 auto;
     margin-top: 60px;
+    margin-bottom: 40px;
     background-color: rgba(255, 255, 255, 0.5);
     color: rgba(0, 0, 0, 0.5);
   }

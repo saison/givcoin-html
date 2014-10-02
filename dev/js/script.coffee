@@ -16,6 +16,11 @@ $ ->
     $("#signupBox").fadeOut(400)
     $("#loginBox").delay(500).fadeIn(400)
 
+  # Top File Select
+  $(".uploadButton #userIcon").change ->
+    $(".uploadButton span.uploadText").text("OK! Selected Picture")
+    $(".uploadButton").addClass("select")
+
   # Header Nav Select
   $("header nav").click ->
     if $(this).hasClass("active")

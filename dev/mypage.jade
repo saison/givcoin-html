@@ -8,11 +8,60 @@ head
   script(src="js/script.js")
   title GiveCoin | 小さな感謝をコインで givery社内アプリ
 body
-  header
+  #bg
+    img(src="img/bgimg.png", alt="topImg")
+  header(style="background-color: #EFBB24;")
     nav#icon
       span.bar
       span.bar
       span.bar
     h1 GivCoin
   #wrapper
-    
+    section#myInfo
+      #myIcon
+        img(src="img/nitta.jpg", alt="myicon")
+      #myNameArea
+        h2 新田章太 @ maximum80
+        #totalCount
+          |累計獲得枚数
+          span 100
+          |枚
+    section#coinInfo
+      .userInfoContent
+        .title 今週の残りコイン
+        .count
+          span 3
+          |枚
+      .userInfoContent
+        .title 獲得コイン
+        .count
+          span 10
+          |枚
+      .userInfoContent
+        .title 今月あげたコイン
+        .count
+          span 8
+          |枚
+
+    section#usersList
+      h3 社員一覧
+      - for(var i = 0; i < 11; i++) {
+      section.users
+        article
+          a(href="userdetail.html?id=1")
+            .userIcon
+              img(src="img/nitta.jpg", alt="maximum80")
+            .userName 新田章太
+        article
+          a(href="userdetail.html?id=1")
+            .userIcon
+              img(src="img/nitta.jpg", alt="maximum80")
+            .userName 新田章太
+        article
+          a(href="userdetail.html?id=1")
+            .userIcon
+              img(src="img/nitta.jpg", alt="maximum80")
+            .userName 新田章太
+      -}
+footer(style="background-color: #EFBB24;")
+  |Copyright &copy; 2014 GivCoin All Rights Reserved.

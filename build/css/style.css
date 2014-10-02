@@ -59,10 +59,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 html, body {
   font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 13px;
-  color: #3b3b3b;
+  color: #ffffff;
 }
 
-#indexWrapper #topLoginArea #toBox, header {
+#indexWrapper #topLoginArea #toBox, #indexWrapper #topLoginArea #signupBox ul, header, #myInfo, #coinInfo .userInfoContent, #usersList section.users {
   overflow: hidden;
   *zoom: 1;
 }
@@ -143,8 +143,7 @@ html, body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 10px;
-  display: inline-block;
+  margin-top: 15px;
   width: 100%;
   height: 30px;
   line-height: 30px;
@@ -154,6 +153,7 @@ html, body {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
+  font-size: 15px;
   color: #ffffff;
 }
 #indexWrapper #topLoginArea #signupBox input[type="submit"] {
@@ -174,8 +174,99 @@ html, body {
   color: #ffffff;
   font-size: 20px;
 }
+#indexWrapper #topLoginArea #signupBox input[type="radio"] {
+  display: none;
+}
 #indexWrapper #topLoginArea #signupBox input::-webkit-input-placeholder {
   color: #ffffff;
+  opacity: 0.5;
+}
+#indexWrapper #topLoginArea #signupBox .uploadButton {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  margin-top: 10px;
+  padding: 10px;
+  border: solid 1px #ffffff;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+#indexWrapper #topLoginArea #signupBox .uploadButton.select {
+  background-color: rgba(248, 138, 208, 0.6);
+}
+#indexWrapper #topLoginArea #signupBox .uploadButton input[type=file] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+#indexWrapper #topLoginArea #signupBox h3 {
+  margin-top: 15px;
+  color: #ffffff;
+}
+#indexWrapper #topLoginArea #signupBox ul {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+}
+#indexWrapper #topLoginArea #signupBox ul label {
+  width: 65px;
+  height: 65px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 6%;
+  margin-bottom: 10px;
+}
+#indexWrapper #topLoginArea #signupBox ul label:nth-child(1) li {
+  background-color: #f587c6;
+}
+#indexWrapper #topLoginArea #signupBox ul label:nth-child(2) li {
+  background-color: #EFBB24;
+}
+#indexWrapper #topLoginArea #signupBox ul label:nth-child(3) li {
+  background-color: #2EA9DF;
+}
+#indexWrapper #topLoginArea #signupBox ul label li {
+  width: 65px;
+  height: 65px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  opacity: 0.3;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#indexWrapper #topLoginArea #signupBox ul label input[type="radio"]:checked + li {
+  opacity: 1;
+}
+#indexWrapper #topLoginArea #signupBox ul#colorBox label:nth-child(1) li {
+  background-color: #00896C !important;
+}
+#indexWrapper #topLoginArea #signupBox ul#colorBox label:nth-child(2) li {
+  background-color: #ED784A !important;
+}
+#indexWrapper #topLoginArea #signupBox ul#colorBox label:nth-child(3) li {
+  background-color: #D05A6E !important;
 }
 #indexWrapper #topLoginArea #loginBox {
   margin-top: 20px;
@@ -188,8 +279,7 @@ html, body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 10px;
-  display: inline-block;
+  margin-top: 15px;
   width: 100%;
   height: 30px;
   line-height: 30px;
@@ -199,6 +289,7 @@ html, body {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
+  font-size: 15px;
   color: #ffffff;
 }
 #indexWrapper #topLoginArea #loginBox input[type="submit"] {
@@ -219,8 +310,12 @@ html, body {
   color: #ffffff;
   font-size: 20px;
 }
+#indexWrapper #topLoginArea #loginBox input[type="radio"] {
+  display: none;
+}
 #indexWrapper #topLoginArea #loginBox input::-webkit-input-placeholder {
   color: #ffffff;
+  opacity: 0.5;
 }
 
 #indexFooter {
@@ -238,10 +333,10 @@ html, body {
 header {
   width: 100%;
   height: 40px;
-  background-color: #f587c6;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 10;
+  background-color: #f587c6;
 }
 header nav#icon {
   -moz-box-sizing: border-box;
@@ -304,4 +399,155 @@ header h1 {
 #wrapper {
   width: 96%;
   margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+#myInfo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#myInfo #myIcon {
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  margin-top: 2px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: 0 0 2px #ffffff;
+  -webkit-box-shadow: 0 0 2px #ffffff;
+  box-shadow: 0 0 2px #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+#myInfo #myIcon img {
+  width: auto;
+  height: auto;
+  max-height: 80px;
+}
+#myInfo #myNameArea {
+  float: right;
+  margin-top: 10px;
+  text-align: right;
+  width: 70%;
+  word-break: break-all;
+}
+#myInfo #myNameArea h2 {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+#myInfo #myNameArea #totalCount span {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 25px;
+  font-family: "Sacramento", cursive;
+}
+
+#coinInfo {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+#coinInfo .userInfoContent {
+  color: #ffffff;
+  height: 40px;
+  line-height: 40px;
+}
+#coinInfo .userInfoContent + .userInfoContent {
+  margin-top: 20px;
+}
+#coinInfo .userInfoContent .title {
+  float: left;
+  font-size: 15px;
+}
+#coinInfo .userInfoContent .count {
+  float: right;
+  display: inline-block;
+}
+#coinInfo .userInfoContent .count span {
+  font-size: 28px;
+  font-family: "Sacramento", cursive;
+  margin-right: 10px;
+}
+
+#usersList {
+  margin-top: 30px;
+}
+#usersList h3 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: solid 1px #ffffff;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+#usersList section.users {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+}
+#usersList section.users article {
+  width: 80px;
+  text-align: center;
+}
+#usersList section.users article a {
+  color: #ffffff;
+}
+#usersList section.users article a .userIcon {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  margin-top: 2px;
+  margin-left: 0;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: 0 0 2px #ffffff;
+  -webkit-box-shadow: 0 0 2px #ffffff;
+  box-shadow: 0 0 2px #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+#usersList section.users article a .userIcon img {
+  width: auto;
+  height: auto;
+  max-height: 80px;
+}
+#usersList section.users article a .userName {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 30px;
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
 }

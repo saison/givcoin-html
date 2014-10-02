@@ -23,6 +23,30 @@ body
           input(type="text", name="nickname", placeholder="Your NickName")
           input(type="password", name="password", placeholder="Password")
           input(type="password", name="passwordConfirm", placeholder="Confirm Password")
+          h3 Your Icon
+          .uploadButton: span.uploadText Select Picture
+            input#userIcon(type="file" name="user_icon")
+          h3 Your Coin Color
+          ul
+            label(for="coin1")
+              input#coin1(type="radio" name="coincolor" value="#f587c6" checked)
+              li
+            label(for="coin2")
+              input#coin2(type="radio" name="coincolor" value="#EFBB24")
+              li
+            label(for="coin3")
+              input#coin3(type="radio" name="coincolor" value="#2EA9DF")
+              li
+          ul#colorBox
+            label(for="coin4")
+              input#coin4(type="radio" name="coincolor" value="#00896C")
+              li
+            label(for="coin5")
+              input#coin5(type="radio" name="coincolor" value="#ED784A")
+              li
+            label(for="coin6")
+              input#coin6(type="radio" name="coincolor" value="#D05A6E")
+              li
           input(type="submit", name="signup", value="Start GivCoin")
       #loginBox
         form(action="#", method="post")
@@ -31,4 +55,4 @@ body
           input(type="submit", name="login", value="Start GivCoin")
 
   footer#indexFooter
-    Copyright &copy; 2014 GivCoin All Rights Reserved.
+    |Copyright &copy; 2014 GivCoin All Rights Reserved.

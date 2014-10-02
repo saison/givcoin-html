@@ -24,6 +24,38 @@
           <input type="text" name="nickname" placeholder="Your NickName">
           <input type="password" name="password" placeholder="Password">
           <input type="password" name="passwordConfirm" placeholder="Confirm Password">
+          <h3>Your Icon</h3>
+          <div class="uploadButton"><span class="uploadText">Select Picture
+              <input id="userIcon" type="file" name="user_icon"></span></div>
+          <h3>Your Coin Color</h3>
+          <ul>
+            <label for="coin1">
+              <input id="coin1" type="radio" name="coincolor" value="#f587c6" checked>
+              <li></li>
+            </label>
+            <label for="coin2">
+              <input id="coin2" type="radio" name="coincolor" value="#EFBB24">
+              <li></li>
+            </label>
+            <label for="coin3">
+              <input id="coin3" type="radio" name="coincolor" value="#2EA9DF">
+              <li></li>
+            </label>
+          </ul>
+          <ul id="colorBox">
+            <label for="coin4">
+              <input id="coin4" type="radio" name="coincolor" value="#00896C">
+              <li></li>
+            </label>
+            <label for="coin5">
+              <input id="coin5" type="radio" name="coincolor" value="#ED784A">
+              <li></li>
+            </label>
+            <label for="coin6">
+              <input id="coin6" type="radio" name="coincolor" value="#D05A6E">
+              <li></li>
+            </label>
+          </ul>
           <input type="submit" name="signup" value="Start GivCoin">
         </form>
       </div>
@@ -36,7 +68,5 @@
       </div>
     </div>
   </div>
-  <footer id="indexFooter">
-    <Copyright>&copy; 2014 GivCoin All Rights Reserved.</Copyright>
-  </footer>
+  <footer id="indexFooter">Copyright &copy; 2014 GivCoin All Rights Reserved.</footer>
 </body>

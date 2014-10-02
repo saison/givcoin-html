@@ -433,6 +433,28 @@ aside ul li a {
   text-decoration: none;
   border-bottom: solid 1px #aeaeae;
 }
+aside #commiterTitle {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+aside .commiter {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+aside .commiter img {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  width: 60px;
+  height: auto;
+}
+aside .commiter h4 {
+  margin-top: 5px;
+  font-size: 12px;
+}
 
 #wrapper {
   width: 96%;

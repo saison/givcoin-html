@@ -305,6 +305,26 @@ aside{
       }
     }
   }
+  #commiterTitle{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+  .commiter{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    img{
+      @include border-radius(100%);
+      width: 60px;
+      height: auto;
+    }
+    h4{
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
 }
 #wrapper{
   width: 96%;

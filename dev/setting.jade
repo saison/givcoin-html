@@ -10,12 +10,21 @@ head
 body
   #bg
     img(src="img/bgimg.png", alt="topImg")
+  header(style="background-color: #EFBB24;")
+    nav#icon
+      span.bar
+      span.bar
+      span.bar
+    h1 GivCoin
+  aside
+    ul
+      li
+        a(href="mypage.html") MyPage
+      li
+        a(href="setting.html") Setting
   #indexWrapper
-    h1#logo GivCoin
+    h1#setting Setting
     #topLoginArea
-      #toBox
-        #toSignup.active Signup
-        #toLogin login
       #signupBox
         form(action="mypage.html", method="post")
           input(type="mail", name="email", placeholder="Your E-Mail")
@@ -47,12 +56,7 @@ body
             label(for="coin6")
               input#coin6(type="radio" name="coincolor" value="#D05A6E")
               li
-          input(type="submit", name="signup", value="Start GivCoin")
-      #loginBox
-        form(action="#", method="post")
-          input(type="mail", name="email", placeholder="E-Mail")
-          input(type="password", name="password", placeholder="Password")
-          input(type="submit", name="login", value="Start GivCoin")
+          input(type="submit", name="signup", value="Save Your Profile.")
 
   footer#indexFooter
     |Copyright &copy; 2014 GivCoin All Rights Reserved.

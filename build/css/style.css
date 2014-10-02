@@ -62,7 +62,7 @@ html, body {
   color: #ffffff;
 }
 
-#indexWrapper #topLoginArea #toBox, #indexWrapper #topLoginArea #signupBox ul, header, #myInfo, #coinInfo .userInfoContent, #usersList section.users {
+#indexWrapper #topLoginArea #toBox, #indexWrapper #topLoginArea #signupBox ul, header, #myInfo, #coinInfo .userInfoContent, #usersList section.users, #isGivCoin {
   overflow: hidden;
   *zoom: 1;
 }
@@ -84,12 +84,17 @@ html, body {
   top: 50px;
   z-index: 3;
 }
-#indexWrapper h1#logo {
+#indexWrapper h1 {
   width: 100%;
   text-align: center;
   font-size: 40px;
-  font-family: "Sacramento", cursive;
   color: #ffffff;
+}
+#indexWrapper h1#logo {
+  font-family: "Sacramento", cursive;
+}
+#indexWrapper h1#setting {
+  margin-top: 30px;
 }
 #indexWrapper #topLoginArea {
   width: 80%;
@@ -342,12 +347,12 @@ header nav#icon {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  float: left;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  float: right;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   padding-top: 5px;
-  padding-left: 10px;
+  margin-right: 10px;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -387,13 +392,46 @@ header nav#icon.active span:nth-child(3) {
   transform: rotate(-90deg) translateX(5px);
 }
 header h1 {
-  float: right;
+  float: left;
   height: 40px;
   line-height: 40px;
-  margin-right: 15px;
+  margin-left: 15px;
   color: #ffffff;
   font-size: 20px;
   font-family: "Sacramento", cursive;
+}
+
+aside {
+  width: 200px;
+  height: 100%;
+  min-height: 100%;
+  background-color: #3b3b3b;
+  position: fixed;
+  top: 40px;
+  right: -200px;
+  z-index: 100;
+  -moz-transition: right 0.3s ease-out;
+  -o-transition: right 0.3s ease-out;
+  -webkit-transition: right 0.3s ease-out;
+  transition: right 0.3s ease-out;
+}
+aside ul {
+  width: 100%;
+}
+aside ul li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+aside ul li a {
+  display: inline-block;
+  text-indent: 1em;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: solid 1px #aeaeae;
 }
 
 #wrapper {
@@ -539,6 +577,43 @@ header h1 {
 #usersList section.users article a .userName {
   display: inline-block;
   margin-top: 5px;
+}
+
+h3#GivCoin {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#isGivCoin {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+#isGivCoin div {
+  text-align: center;
+}
+#isGivCoin #give {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: "Sacramento", cursive;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+#isGivCoin #not {
+  width: 50% !important;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 footer {

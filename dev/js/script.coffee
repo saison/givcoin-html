@@ -35,3 +35,16 @@ $ ->
       $(this).removeClass("active")
     else
       $(this).addClass("active")
+
+  # Ranking Tab Select
+  $(".rankingList").fadeOut(0)
+  $("#Monthly").fadeIn(0)
+  
+  $("#rankTab ul li").click ->
+    tab = $(this).text()
+
+    $("#rankTab ul li.active").removeClass('active')
+    $(this).addClass("active")
+
+    $(".rankingList").fadeOut(200)
+    $("#"+tab).delay(190).fadeIn(200)

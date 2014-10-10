@@ -1,0 +1,117 @@
+doctype html
+html(lang="ja")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width initial-scale=1.0 user-scalable=no")
+  link(rel="stylesheet", href="css/style.css")
+  script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+  script(src="js/footerFixed.js")
+  script(src="js/script.js")
+  title GiveCoin | 小さな感謝をコインで givery社内アプリ
+body
+  #bg
+    img(src="img/bgimg.png", alt="topImg")
+  header(style="background-color: #EFBB24;")
+    nav#icon
+      span.bar
+      span.bar
+      span.bar
+    h1 GivCoin
+  aside
+    ul
+      li
+        a(href="mypage.html") MyPage
+      li
+        a(href="ranking.html") Ranking
+      li
+        a(href="setting.html") Setting
+    h3#commiterTitle Commiter
+    .commiter
+      img(src="img/youli.jpg", alt="youli")
+      h4
+        |Planner / Director
+        br
+        |You Li Nishigai @ You Li
+    .commiter
+      img(src="img/daoshi.jpg", alt="daoshi")
+      h4
+        |Back-End Engineer
+        br
+        |Takayuki Oda @ da0shi
+    .commiter
+      img(src="img/saison.jpg", alt="saison")
+      h4
+        |Front-End Engineer
+        br
+        |Takuma Nishimura @ saison
+  #wrapper
+    h2#rankingTitle Ranking
+    nav#rankTab
+      ul
+        li.active Monthly
+        li Quarter
+        li HalfYear
+        li Total
+    article#Monthly.rankingList
+      ul
+        - for(var i = 1; i <= 10; i++){
+        li
+          a(href="userdetail.html")
+            h3.rank Rank #{i}
+            div.userIcon
+              img(src="img/nitta.jpg", alt="userIcon")
+            div.userInfo
+              h3 新田章太
+              p
+                |獲得枚数
+                span #{90 - i * 2}
+                |枚
+        - }
+    article#Quarter.rankingList
+      ul
+        - for(var i = 1; i <= 10; i++){
+        li
+          a(href="userdetail.html")
+            h3.rank Rank #{i}
+            div.userIcon
+              img(src="img/nitta.jpg", alt="userIcon")
+            div.userInfo
+              h3 新田章太
+              p
+                |獲得枚数
+                span #{90 - i * 2}
+                |枚
+        - }
+    article#HalfYear.rankingList
+      ul
+        - for(var i = 1; i <= 10; i++){
+        li
+          a(href="userdetail.html")
+            h3.rank Rank #{i}
+            div.userIcon
+              img(src="img/nitta.jpg", alt="userIcon")
+            div.userInfo
+              h3 新田章太
+              p
+                |獲得枚数
+                span #{90 - i * 2}
+                |枚
+        - }
+    article#Total.rankingList
+      ul
+        - for(var i = 1; i <= 10; i++){
+        li
+          a(href="userdetail.html")
+            h3.rank Rank #{i}
+            div.userIcon
+              img(src="img/nitta.jpg", alt="userIcon")
+            div.userInfo
+              h3 新田章太
+              p
+                |獲得枚数
+                span #{90 - i * 2}
+                |枚
+        - }
+
+footer(style="background-color: #EFBB24;")
+  |Copyright &copy; 2014 GivCoin All Rights Reserved.

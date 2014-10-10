@@ -497,6 +497,111 @@ h3#GivCoin{
     color: rgba(0, 0, 0, 0.5);
   }
 }
+
+// ranking
+#rankingTitle{
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: $logo;
+}
+#rankTab{
+  ul{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: solid 1px $white;
+    li{
+      float: left;
+      width: 25%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      @include transition(all 0.3s);
+      &.active{
+        background-color: rgba(255, 255, 255, 0.6);
+        color: $white;
+      }
+    }
+  }
+}
+
+.rankingList{
+  ul{
+    width: 90%;
+    margin: 0 auto;
+    li{
+      @extend %clearfix;
+      margin-top: 25px;
+      &:nth-child(1) a h3.rank{
+        font-size: 33px;
+        font-weight: bold;
+        color: #ffce07;
+      }
+      &:nth-child(2) a h3.rank{
+        font-size: 27px;
+        font-weight: bold;
+        color: #cecece;
+      }
+      &:nth-child(3) a h3.rank{
+        font-size: 24px;
+        font-weight: bold;
+        color: #d88741;
+      }
+      a{
+        display: inline-block;
+        width: 100%;
+        color: $white;
+        text-decoration: none;
+        h3.rank{
+          position: absolute;
+          font-size: 20px;
+          font-family: $logo;
+          @include transform(rotate(-10deg));
+          margin-top: -10px;
+          margin-left: -10px;
+          @include text-shadow(0 0 px $white);
+        }
+        div.userIcon{
+          float: left;
+          @include box-sizing(border-box);
+          width: 80px;
+          height: 80px;
+          margin: 5px;
+          margin-top: 2px;
+          @include border-radius(8px);
+          @include box-shadow(0 0 2px $white);
+          text-align: center;
+          overflow: hidden;
+          img{
+            width: auto;
+            height: auto;
+            max-height: 80px;
+          }
+        }
+        div.userInfo{
+          float: right;
+          text-align: right;
+          h3{
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+          p{
+            span{
+              font-size: 30px;
+              font-family: $logo;
+              margin-left: 10px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 footer{
   width: 100%;
   height: 30px;

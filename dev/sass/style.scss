@@ -561,7 +561,7 @@ h3#GivCoin{
           @include transform(rotate(-10deg));
           margin-top: -10px;
           margin-left: -10px;
-          @include text-shadow(0 0 px $white);
+          @include text-shadow(0 0 2px $white);
         }
         div.userIcon{
           float: left;

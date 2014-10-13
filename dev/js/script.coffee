@@ -1,11 +1,11 @@
 $ ->
+
   $("#loginBox").fadeOut(0)
 
-  # Top Tab Select
   $("#toSignup").click ->
-    $(this).removeClass("active")
+    @removeClass("active")
     $("#toLogin").removeClass("active")
-    $(this).addClass("active")
+    @addClass("active")
     $("#loginBox").fadeOut(400)
     $("#signupBox").delay(500).fadeIn(400)
 
@@ -39,12 +39,11 @@ $ ->
   # Ranking Tab Select
   $(".rankingList").fadeOut(0)
   $("#Monthly").fadeIn(0)
-  
+
   $("#rankTab ul li").click ->
     tab = $(this).text()
-
-    $("#rankTab ul li.active").removeClass('active')
-    $(this).addClass("active")
-
-    $(".rankingList").fadeOut(200)
-    $("#"+tab).delay(190).fadeIn(200)
+    if !$(this).hasClass("active")
+      $("#rankTab ul li.active").removeClass('active')
+      $(this).addClass("active")
+      $(".rankingList").fadeOut(200)
+      $("#"+tab).delay(190).fadeIn(200)

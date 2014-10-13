@@ -349,6 +349,7 @@ aside{
     @include border-radius(8px);
     @include box-shadow(0 0 2px $white);
     text-align: center;
+    background-color: $white;
     overflow: hidden;
     img{
       width: auto;
@@ -442,6 +443,7 @@ aside{
           @include box-shadow(0 0 2px $white);
           text-align: center;
           overflow: hidden;
+          background-color: $white;
           img{
             width: auto;
             height: auto;
@@ -574,6 +576,7 @@ h3#GivCoin{
           @include box-shadow(0 0 2px $white);
           text-align: center;
           overflow: hidden;
+          background-color: $white;
           img{
             width: auto;
             height: auto;

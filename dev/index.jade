@@ -1,58 +1,58 @@
 doctype html
 html(lang="ja")
-head
-  meta(charset="UTF-8")
-  meta(name="viewport", content="width=device-width initial-scale=1.0 user-scalable=no")
-  link(rel="stylesheet", href="css/style.css")
-  script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
-  script(src="js/script.js")
-  title GiveCoin | 小さな感謝をコインで givery社内アプリ
-body
-  #bg
-    img(src="img/bgimg.png", alt="topImg")
-  #indexWrapper
-    h1#logo GivCoin
-    #topLoginArea
-      #toBox
-        #toSignup.active Signup
-        #toLogin login
-      #signupBox
-        form(action="mypage.html", method="post")
-          input(type="mail", name="email", placeholder="Your E-Mail")
-          input(type="text", name="name", placeholder="Your Name")
-          input(type="text", name="nickname", placeholder="Your NickName")
-          input(type="password", name="password", placeholder="Password")
-          input(type="password", name="passwordConfirm", placeholder="Confirm Password")
-          h3 Your Icon
-          .uploadButton: span.uploadText Select Picture
-            input#userIcon(type="file" name="user_icon")
-          h3 Your Coin Color
-          ul
-            label(for="coin1")
-              input#coin1(type="radio" name="coincolor" value="#f587c6" checked)
-              li
-            label(for="coin2")
-              input#coin2(type="radio" name="coincolor" value="#EFBB24")
-              li
-            label(for="coin3")
-              input#coin3(type="radio" name="coincolor" value="#2EA9DF")
-              li
-          ul#colorBox
-            label(for="coin4")
-              input#coin4(type="radio" name="coincolor" value="#00896C")
-              li
-            label(for="coin5")
-              input#coin5(type="radio" name="coincolor" value="#ED784A")
-              li
-            label(for="coin6")
-              input#coin6(type="radio" name="coincolor" value="#D05A6E")
-              li
-          input(type="submit", name="signup", value="Start GivCoin")
-      #loginBox
-        form(action="#", method="post")
-          input(type="mail", name="email", placeholder="E-Mail")
-          input(type="password", name="password", placeholder="Password")
-          input(type="submit", name="login", value="Start GivCoin")
-
-  footer#indexFooter
-    |Copyright &copy; 2014 GivCoin All Rights Reserved.
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width initial-scale=1.0 user-scalable=no")
+    link(rel="stylesheet", href="css/style.css")
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script(src="js/script.js")
+    title GiveCoin | 小さな感謝をコインで givery社内アプリ
+  body
+    #bg
+      img(src="img/bgimg.png", alt="topImg")
+    #indexWrapper
+      h1#logo GivCoin
+      #topLoginArea
+        #toBox
+          #toSignup.active Signup
+          #toLogin login
+        #signupBox
+          form(action="mypage.html", method="post")
+            input(type="mail", name="email", placeholder="Your E-Mail")
+            input(type="text", name="name", placeholder="Your Name")
+            input(type="text", name="nickname", placeholder="Your NickName")
+            input(type="password", name="password", placeholder="Password")
+            input(type="password", name="passwordConfirm", placeholder="Confirm Password")
+            h3 Your Icon
+            .uploadButton: span.uploadText Select Picture
+              input#userIcon(type="file" name="user_icon")
+            h3 Your Coin Color
+            ul
+              label(for="coin1")
+                input#coin1(type="radio" name="coincolor" value="#f587c6" checked)
+                li
+              label(for="coin2")
+                input#coin2(type="radio" name="coincolor" value="#EFBB24")
+                li
+              label(for="coin3")
+                input#coin3(type="radio" name="coincolor" value="#2EA9DF")
+                li
+            ul#colorBox
+              label(for="coin4")
+                input#coin4(type="radio" name="coincolor" value="#00896C")
+                li
+              label(for="coin5")
+                input#coin5(type="radio" name="coincolor" value="#ED784A")
+                li
+              label(for="coin6")
+                input#coin6(type="radio" name="coincolor" value="#D05A6E")
+                li
+            input(type="submit", name="signup", value="Start GivCoin")
+        #loginBox
+          form(action="#", method="post")
+            input(type="mail", name="email", placeholder="E-Mail")
+            input(type="password", name="password", placeholder="Password")
+            input(type="submit", name="login", value="Start GivCoin")
+  
+    footer#indexFooter
+      |Copyright &copy; 2014 GivCoin All Rights Reserved.
